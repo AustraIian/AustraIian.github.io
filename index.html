@@ -6,7 +6,7 @@
     <title>Website</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font: 16px Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #000;
@@ -31,13 +31,6 @@
             margin-bottom: 40px;
         }
 
-        .barcode-container {
-            position: relative;
-            margin-bottom: 40px;
-            opacity: 0;
-            animation: fadeIn 2s ease forwards;
-        }
-
         .barcode-text {
             font-size: 60px;
             font-weight: bold;
@@ -46,17 +39,8 @@
 
         .additional-text {
             font-size: 24px;
-            font-weight: 600; /* bold but not as bold as the title */
+            font-weight: 600;
             margin-bottom: 20px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
 
         .link-container {
@@ -70,7 +54,7 @@
             text-decoration: none;
             margin: 0 10px;
             font-size: 24px;
-            font-weight: 600; /* bold but not as bold as the title */
+            font-weight: 600;
             transition: transform 0.3s ease;
         }
 
@@ -80,7 +64,6 @@
         }
 
         .link-container a:hover {
-            text-decoration: none;
             transform: scale(1.1);
         }
     </style>
@@ -91,12 +74,8 @@
             <img src="zp.png" alt="Profile Picture">
         </div>
         <div class="barcode-container">
-            <div class="barcode-text">
-                Barcode.
-            </div>
-            <div class="additional-text">
-                Competitive Battlefield 2042 Player for team Zero Point!
-            </div>
+            <div class="barcode-text">Barcode.</div>
+            <div class="additional-text">Competitive Battlefield 2042 Player for team Zero Point!</div>
         </div>
         <div class="link-container">
             <a href="https://discord.gg/RSuHPuKH" target="_blank">Discord</a>

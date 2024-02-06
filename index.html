@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .profile-pic img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 40px;
+        }
+
+        .barcode-container {
+            position: relative;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .barcode-text {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .additional-text {
+            font-size: 24px;
+            font-weight: 600; /* bold but not as bold as the title */
+            margin-bottom: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .link-container a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            font-weight: 600; /* bold but not as bold as the title */
+            transition: transform 0.3s ease;
+        }
+
+        .link-container a:not(:last-child)::after {
+            content: " - ";
+            color: #ccc;
+        }
+
+        .link-container a:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="profile-pic">
+            <img src="zp.png" alt="Profile Picture">
+        </div>
+        <div class="barcode-container">
+            <div class="barcode-text">
+                Barcode.
+            </div>
+            <div class="additional-text">
+                Competitive Battlefield 2042 Player for team Zero Point!
+            </div>
+        </div>
+        <div class="link-container">
+            <a href="https://discord.gg/RSuHPuKH" target="_blank">Discord</a>
+            <a href="https://battlelog.battlefield.com/bf4/platoons/view/1172411290779426445/" target="_blank">Clan</a>
+            <a href="https://www.twitch.tv/pythonone" target="_blank">Twitch</a>
+            <a href="https://github.com/ZR-Barcode" target="_blank">Github</a>
+        </div>
+    </div>
+</body>
+</html>

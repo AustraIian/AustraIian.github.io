@@ -55,13 +55,14 @@
             margin: 0 10px;
             font-size: 24px;
             font-weight: 600;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Keep transition for text */
         }
 
         .link-container a::after {
             content: " - ";
             color: #ccc;
             margin: 0 5px;
+            transition: none; /* Remove transition for dashes */
         }
 
         .link-container a:last-child::after {

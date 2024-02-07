@@ -6,14 +6,14 @@
     <title>Website</title>
     <style>
         body {
-            font: 16px 'Kanit', Arial, sans-serif; /* Updated font */
+            font-family: 'Kanit', Arial, sans-serif; /* Set font */
             margin: 0;
             padding: 0;
             background-color: #000;
             color: #fff;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
             height: 100vh;
             text-align: center;
         }
@@ -31,22 +31,24 @@
             margin-bottom: 40px;
         }
 
+        .barcode-container {
+            margin-bottom: 20px;
+        }
+
         .barcode-text {
             font-size: 60px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .additional-text {
             font-size: 24px;
             font-weight: 600;
-            margin-bottom: 20px;
         }
 
         .link-container {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
         }
 
         .link-container a {
@@ -55,18 +57,7 @@
             margin: 0 10px;
             font-size: 24px;
             font-weight: 600;
-            transition: transform 0.3s ease; /* Keep transition for text */
-        }
-
-        .link-container a::after {
-            content: " - ";
-            color: #ccc;
-            margin: 0 5px;
-            transition: none; /* Remove transition for dashes */
-        }
-
-        .link-container a:last-child::after {
-            content: "";
+            transition: transform 0.3s ease; /* Add transition */
         }
 
         .link-container a:hover {
